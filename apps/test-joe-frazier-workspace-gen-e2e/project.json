@@ -1,0 +1,29 @@
+{
+  "name": "test-joe-frazier-workspace-gen-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/test-joe-frazier-workspace-gen-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/test-joe-frazier-workspace-gen-e2e/cypress.json",
+        "devServerTarget": "test-joe-frazier-workspace-gen:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "test-joe-frazier-workspace-gen:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/test-joe-frazier-workspace-gen-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["test-joe-frazier-workspace-gen"]
+}
