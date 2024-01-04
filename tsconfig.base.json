@@ -20,6 +20,9 @@
     "paths": {
       "@test-joe-frazier-workspace-gen/common/styles": [
         "libs/common/styles/src/index.ts"
+      ],
+      "@test-joe-frazier-workspace-gen/common/ui": [
+        "libs/common/ui/src/index.ts"
       ]
     }
   },
