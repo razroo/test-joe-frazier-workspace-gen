@@ -2,7 +2,23 @@
   (sideNavToggle)="sideNavToggle()"
 ></test-joe-frazier-workspace-gen-global-header>
 <div class="wrapper">
-  <div class="container">Your component goes here</div>
+  <div class="container">
+    Your component goes here<test-joe-frazier-workspace-gen-global-sidenav
+      [opened]="sideNavOpen"
+    >
+      <mat-nav-list sidenav>
+        <a
+          mat-list-item
+          routerLinkActive="active-link"
+          routerLink="/"
+          (click)="sideNavToggle()"
+        >
+          <span class="App__sidenav-text">Home</span>
+        </a>
+      </mat-nav-list>
+      <router-outlet></router-outlet>
+    </test-joe-frazier-workspace-gen-global-sidenav>
+  </div>
 </div>
 <test-joe-frazier-workspace-gen-global-footer>
 </test-joe-frazier-workspace-gen-global-footer>
