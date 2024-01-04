@@ -23,6 +23,9 @@
       ],
       "@test-joe-frazier-workspace-gen/common/ui": [
         "libs/common/ui/src/index.ts"
+      ],
+      "@test-joe-frazier-workspace-gen/home": [
+        "libs/home/src/index.ts"
       ]
     }
   },
